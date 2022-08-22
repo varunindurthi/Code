@@ -6,7 +6,7 @@ ws = Workspace.from_config(path='./config')
 az_store = Datastore.get(ws, 'azureml_ds_practice_01')
 
 #Create the path of the csv file
-csv_path = [(az_store,'Loan Data/Loan Approval Prediction.csv')]
+csv_path = [(az_store,'Loan Data/data/Loan Approval Prediction.csv')]
 
 #Create the dataset
 loan_dataset = Dataset.Tabular.from_delimited_files(path=csv_path)

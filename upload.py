@@ -4,7 +4,7 @@ from azureml.core import Workspace, Datastore, Dataset
 
 ws = Workspace.from_config('./config')
 az_store = Datastore.get(ws, 'azureml_ds_practice_01')
-az_dataset = Dataset.get_by_name(ws, 'Loan Applications USing SDK')
+# az_dataset = Dataset.get_by_name(ws, 'Loan Applications USing SDK')
 az_default_store = ws.get_default_datastore()
 
 #Upload local files to storage account using datastore
