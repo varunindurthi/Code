@@ -8,8 +8,6 @@ from azureml.core import Workspace, Dataset
 # Access the Workspace
 ws = Workspace.from_config("./config")
 
-
-
 # -------------------------------------------------
 # Create custom environment
 from azureml.core import Environment
